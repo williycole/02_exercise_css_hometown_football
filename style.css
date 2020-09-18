@@ -1,0 +1,294 @@
+/* ==========(Standard CSS)========== */
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-image: url("https://res.cloudinary.com/cldean11/image/upload/v1567645069/FC901/texture-pattern-wallpaper_qkygh6.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: cover;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* ==========(Mobile View)========== */
+header {
+    display: flex;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+#fc-901-logo-position {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: min-content;
+    margin: 0;
+    padding: 0 1em;
+}
+
+#fc-901-logo {
+    width: 50px;
+    height: min-content;
+}
+
+#nav-menu {
+    padding: 0;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+li {
+    list-style: none;
+    padding: .5em;
+}
+
+a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+.team-transparent-img {
+    display: block;
+    margin: auto auto;
+    width: 10em;
+    padding: 5em 0 0 0;
+}
+
+table td{
+    padding:.2em .3em;
+}
+
+.blue-date {
+    color:#13b5eb;
+}
+
+.yellow-date {
+    color:#ffce19;
+}
+
+.location {
+    color: #ffffff;
+}
+
+.championship-logo {
+    display: block;
+    margin: auto auto;
+    width: 5em;
+}
+
+#championship-logo-postition {
+    padding: 3em;
+}
+
+@media (min-width:360px){
+    table {
+        border: 2px solid #13b5eb;
+        font-size: .76em;
+        width: 100%;
+        height: auto;
+        text-transform: uppercase;
+        margin: 0 auto;
+        padding: 1em;
+    }
+}
+
+@media (min-width:400px){
+    table {
+        border: 2px solid #13b5eb;
+        font-size: .8em;
+        width: 80%;
+        height: auto;
+        text-transform: uppercase;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .team-transparent-img {
+        display: block;
+        margin: auto auto;
+        width: 15em;
+        padding: 5em 0 0 0;
+    }
+}
+
+/* =====Tablet View */
+@media (min-width:800px){
+    table {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        width: auto;
+        height: auto;
+        text-transform: uppercase;
+        margin: 0 auto;
+        padding: 3em 0;
+    }
+
+    
+    .team-transparent-img {
+        display: block;
+        margin: auto auto;
+        width: 30em;
+    }
+
+    a {
+        display: inline;
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em;
+        padding: .2em .5em;
+    }
+
+    .championship-logo {
+        display: block;
+        margin: auto auto;
+        width: 10em;
+        padding: 5em 0 0 0;
+    }
+}
+
+/* ==========(Desktop View)========== */
+@media (min-width:900px){
+    table {
+        border: 3px solid #13b5eb;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        width: auto;
+        height: auto;
+        text-transform: uppercase;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    
+    .team-transparent-img {
+        display: block;
+        margin: auto auto;
+        width: 55em;
+    }
+
+    a {
+        display: inline;
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+    
+    #fc-901-logo-position {
+        display: inline-flex;
+        justify-content: flex-start;
+        width: min-content;
+        margin: 0;
+        padding: 0 3em;
+    }
+
+    #fc-901-logo {
+        width: 3.5em;
+        height: ;
+    }
+
+    table td {
+        padding:.7em .3em; 
+    }
+
+
+
+
+
+
+
+
+
+    .slide-show-heading{
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.8em;
+    }
+
+    .players {
+        width: 180px;
+        margin:  0 auto;
+        display:flex;
+        justify-content: space-between;
+    }
+    .auto-slider{
+        outline:1px solid  #ffce19;;
+        display: block;
+        text-align: center;
+        width:200px;
+        height:min-content;
+        margin: 0 auto;
+        padding: 0 auto;
+        overflow-x:hidden;
+        background-color: #1b1b1b;
+    }
+      
+    .auto-slider-content{
+        list-style:none;
+        display:flex;
+        justify-content: flex-start;
+        margin: 0 5px;
+        animation: slide 15s ease-in-out infinite;
+        animation-duration:15s;
+    }
+    .spacing {
+        margin: 0 5px;
+    }
+      
+      @keyframes slide{
+        10%{
+          transform:translateX(0);
+        }
+        20% {
+          transform:translateX(-190px);
+        }
+        30% {
+            transform:translateX(-380px);
+          }
+
+        40% {
+          transform:translateX(-570px);
+        }
+        50% {
+          transform:translateX(-760px);
+        }
+
+        90%{
+          transform:translateX(0);
+        }
+        
+      }
+      
+
+
+
+
+
+
+
+}
+
