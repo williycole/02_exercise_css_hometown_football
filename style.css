@@ -68,12 +68,50 @@ li {
     padding: .5em;
 }
 
+li:hover {
+    animation: shake .6s;
+}
+
+@keyframes shake {
+    0% { 
+        transform: translate(3px, 3px); 
+    }
+    10% { 
+        transform: translate(-3px, -3px); 
+    }
+}
+
 a {
     display: inline;
     color: white;
     text-decoration: none;
     font-size: .8em;
 }
+a.hover {
+    display:inline-block;
+    position: relative;
+  }
+
+  .hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom: 0;
+    left: 0px;
+    background: linear-gradient(to right,#cdcfd3,#ABADB2);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+    padding-bottom: 4px; 
+    margin-bottom: 4px;
+  }
+  .hover:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+
+
 
 .team-transparent-img {
     display: block;
@@ -117,6 +155,7 @@ table td{
         text-transform: uppercase;
         margin: 0 auto;
         padding: 1em;
+        background: #1b1b1b;
     }
 }
 
@@ -178,6 +217,7 @@ Could not have figured this one out without them!*/
     animation-duration:25s;
 }
 .spacing {
+    /* I could have used ul and li's but I chose to use divs to see if I could do it a different way than smashtheshell */
     margin: 0 0px;
 }
   @keyframes slide{
