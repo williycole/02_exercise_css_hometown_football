@@ -46,7 +46,7 @@ header {
 
 #fc-901-logo {
     width: 50px;
-    height: min-content;
+    /* height: min-content; */
 }
 
 #nav-menu {
