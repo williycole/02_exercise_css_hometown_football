@@ -44,7 +44,9 @@ header {
     padding: 0 1em;
 }
 
-
+#fc-901-logo {
+    width: 2.5em;
+}
 
 #nav-menu {
     padding: 0;
