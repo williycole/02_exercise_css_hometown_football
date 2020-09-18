@@ -23,12 +23,17 @@ body {
 
 
 
-/* ==========(Mobile View)========== */
+/* ==========(Mobile View & Slider Content)========== */
 header {
     display: flex;
+    align-items: center;
     color: white;
     position: fixed;
+    top:0;
+    padding: 5px 0;
     width: 100%;
+    height: max-content;
+    background:  #1b1b1b ;
 }
 
 #fc-901-logo-position {
@@ -134,6 +139,68 @@ table td{
     }
 }
 
+/* =====(Slider Content) */
+.slide-show-heading{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8em;
+}
+
+.players {
+    width: 180px;
+    margin:  0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+/*=====(GIVING CREDIT where its due)===== 
+I would like to thank Amit kumar @smashtheshell and Chris Coyier @ Css tricks for their awesome tutorials on CSS Auto Sliders!
+Could not have figured this one out without them!*/
+.auto-slider{
+    outline:1px solid  #ffce19;;
+    display: block;
+    text-align: center;
+    width:170px;
+    height:min-content;
+    margin: 0 auto;
+    padding: 0 auto;
+    overflow-x:hidden;
+    background-color: #1b1b1b;
+}
+  
+.auto-slider-content{
+    list-style:none;
+    display:flex;
+    justify-content: flex-start;
+    margin: 0 0px;
+    animation: slide 15s ease-in-out infinite;
+    animation-duration:25s;
+}
+.spacing {
+    margin: 0 0px;
+}
+  @keyframes slide{
+    10%, 15% {
+      transform:translateX(0);
+    }
+    20%, 25%  {
+      transform:translateX(-180px);
+    }
+    30%, 35% {
+        transform:translateX(-365px);
+      }
+    40%, 45% {
+      transform:translateX(-545px);
+    }
+    50%, 55% {
+      transform:translateX(-725px);
+    }
+    90%{
+      transform:translateX(0);
+    } 
+  }
+  
 /* =====Tablet View */
 @media (min-width:800px){
     table {
@@ -213,76 +280,7 @@ table td{
         padding:.7em .3em; 
     }
 
-
-
-
-
-
-
-
-
-    .slide-show-heading{
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-        font-size: 1.8em;
-    }
-
-    .players {
-        width: 180px;
-        margin:  0 auto;
-        display:flex;
-        justify-content: space-between;
-    }
-    .auto-slider{
-        outline:1px solid  #ffce19;;
-        display: block;
-        text-align: center;
-        width:200px;
-        height:min-content;
-        margin: 0 auto;
-        padding: 0 auto;
-        overflow-x:hidden;
-        background-color: #1b1b1b;
-    }
-      
-    .auto-slider-content{
-        list-style:none;
-        display:flex;
-        justify-content: flex-start;
-        margin: 0 5px;
-        animation: slide 15s ease-in-out infinite;
-        animation-duration:15s;
-    }
-    .spacing {
-        margin: 0 5px;
-    }
-      
-      @keyframes slide{
-        10%{
-          transform:translateX(0);
-        }
-        20% {
-          transform:translateX(-190px);
-        }
-        30% {
-            transform:translateX(-380px);
-          }
-
-        40% {
-          transform:translateX(-570px);
-        }
-        50% {
-          transform:translateX(-760px);
-        }
-
-        90%{
-          transform:translateX(0);
-        }
-        
-      }
-      
+   
 
 
 
